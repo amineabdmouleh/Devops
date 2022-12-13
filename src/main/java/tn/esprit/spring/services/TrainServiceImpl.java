@@ -1,6 +1,7 @@
 package tn.esprit.spring.services;
 
 import org.springframework.stereotype.Service;
+
 import tn.esprit.spring.entities.Train;
 import tn.esprit.spring.entities.Ville;
 import tn.esprit.spring.entities.Voyage;
@@ -40,9 +41,11 @@ public class TrainServiceImpl implements ITrainService {
     VoyageRepository voyageRepository;
 
 
-    public void ajouterTrain(Train t) {
+    public Train ajouterTrain(Train t) {
 
-        trainRepository.save(t);
+    	Train tr = trainRepository.save(t);
+       return tr;
+       
     }
 
     public int TrainPlacesLibres(Ville nomGareDepart) {
