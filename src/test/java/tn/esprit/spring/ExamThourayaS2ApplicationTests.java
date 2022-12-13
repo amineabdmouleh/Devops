@@ -21,19 +21,6 @@ import tn.esprit.spring.entities.Voyage;
 import tn.esprit.spring.repository.VoyageRepository;
 import tn.esprit.spring.services.VoyageServiceImpl;
 
-//package tn.esprit.spring;
-//
-//import org.junit.jupiter.api.Test;
-//import org.springframework.boot.test.context.SpringBootTest;
-//
-//@SpringBootTest
-//class ExamThourayaS2ApplicationTests {
-//
-//	@Test
-//	void contextLoads() {
-//	}
-//
-//}
 
 @SpringBootTest
 @RunWith(MockitoJUnitRunner.class)
